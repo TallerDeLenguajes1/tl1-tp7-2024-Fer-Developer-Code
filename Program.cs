@@ -44,6 +44,7 @@ do
                         break;
                 }
                 Console.WriteLine($"El resultado es: {calculo.Resultado}");
+                calculo.limpiar();
             }
             else
             {
