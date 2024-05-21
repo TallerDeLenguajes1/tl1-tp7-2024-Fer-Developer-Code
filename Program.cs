@@ -10,7 +10,7 @@ do
     if (double.TryParse(linea, out dato))
     {
         Calculadora calculo = new Calculadora();
-        calculo.dato = dato;
+        calculo.Dato = dato;
         Console.WriteLine("Ingrese un segundo numero");
         linea = Console.ReadLine();
         if (double.TryParse(linea, out termino))
@@ -22,15 +22,19 @@ do
                 switch (opcion)
                 {
                     case 1:
+                        calculo.Asignar();
                         calculo.Sumar(termino);
                         break;
                     case 2:
+                        calculo.Asignar();
                         calculo.Restar(termino);
                         break;
                     case 3:
+                        calculo.Asignar();
                         calculo.Multiplicar(termino);
                         break;
                     case 4:
+                        calculo.Asignar();
                         calculo.Dividir(termino);
                         break;
                     case 5:
@@ -39,7 +43,7 @@ do
                         Console.WriteLine("Inserte un valor valido");
                         break;
                 }
-                Console.WriteLine(calculo.Resultado);
+                Console.WriteLine($"El resultado es: {calculo.Resultado}");
             }
             else
             {
