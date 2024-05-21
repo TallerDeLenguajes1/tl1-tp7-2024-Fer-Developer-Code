@@ -1,5 +1,6 @@
 ﻿using espacioCalculdora;
 int opcion = 1;
+int seguirOperando = 1;
 double termino = 0;
 double dato = 0;
 string linea;
@@ -15,7 +16,7 @@ do
         linea = Console.ReadLine();
         if (double.TryParse(linea, out termino))
         {
-            Console.WriteLine("Que tipo de operacion desea realizar?\n1.Sumar\n2.Restar\n3.Multiplicar\n4.Dividir\n5.Terminar");
+            Console.WriteLine("Que tipo de operacion desea realizar?\n1.Sumar\n2.Restar\n3.Multiplicar\n4.Dividir");
             linea = Console.ReadLine();
             if (int.TryParse(linea, out opcion))
             {
@@ -45,6 +46,16 @@ do
                 }
                 Console.WriteLine($"El resultado es: {calculo.Resultado}");
                 calculo.limpiar();
+                Console.WriteLine("Desea realizar otra operacion?\n1.Si\n2.No");
+                linea = Console.ReadLine();
+                if (int.TryParse(linea, out seguirOperando))
+                {
+                    seguirOperando = 1;
+                }
+                else
+                {
+                    Console.WriteLine("Gracias por usar la calculadora");
+                }
             }
             else
             {
@@ -60,4 +71,4 @@ do
     {
         Console.WriteLine("Inserte un valor valido");
     }
-} while (opcion != 5);
+} while (seguirOperando == 1);
