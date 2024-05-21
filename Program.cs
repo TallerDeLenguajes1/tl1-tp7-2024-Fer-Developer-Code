@@ -51,6 +51,10 @@ do
                 Console.WriteLine("Inserte un valor valido");
             }
         }
+        else
+        {
+            Console.WriteLine("Inserte un valor valido");
+        }
     }
     else
     {
