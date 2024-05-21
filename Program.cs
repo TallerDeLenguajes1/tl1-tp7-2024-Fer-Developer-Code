@@ -52,6 +52,7 @@ do
                 {
                     if (seguirOperando == 2)
                     {
+                        seguirOperando = 2;
                         Console.WriteLine("Gracias por usar la calculadora");
                     }
                 }
