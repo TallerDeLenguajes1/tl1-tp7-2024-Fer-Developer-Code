@@ -2,6 +2,7 @@ namespace espacioCalculdora
 {
     public class Calculadora
     {
+        private Double resultado;
         public double dato;
         public void Sumar(double termino){
             resultado = dato + termino;
@@ -18,7 +19,6 @@ namespace espacioCalculdora
         public void limpiar(){
             resultado = 0;
         }
-        private Double resultado;
         public double Resultado{
             get;
             set;
