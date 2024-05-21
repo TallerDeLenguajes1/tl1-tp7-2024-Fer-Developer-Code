@@ -50,11 +50,10 @@ do
                 linea = Console.ReadLine();
                 if (int.TryParse(linea, out seguirOperando))
                 {
-                    seguirOperando = 1;
-                }
-                else
-                {
-                    Console.WriteLine("Gracias por usar la calculadora");
+                    if (seguirOperando == 2)
+                    {
+                        Console.WriteLine("Gracias por usar la calculadora");
+                    }
                 }
             }
             else
