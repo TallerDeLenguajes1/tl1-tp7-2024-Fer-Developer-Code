@@ -23,19 +23,15 @@ do
                 switch (opcion)
                 {
                     case 1:
-                        calculo.Asignar();
                         calculo.Sumar(termino);
                         break;
                     case 2:
-                        calculo.Asignar();
                         calculo.Restar(termino);
                         break;
                     case 3:
-                        calculo.Asignar();
                         calculo.Multiplicar(termino);
                         break;
                     case 4:
-                        calculo.Asignar();
                         calculo.Dividir(termino);
                         break;
                     case 5:
