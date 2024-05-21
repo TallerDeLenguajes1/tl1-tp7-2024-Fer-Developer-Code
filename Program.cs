@@ -41,7 +41,7 @@ do
                         break;
                 }
                 Console.WriteLine($"El resultado es: {calculo.Resultado}");
-                calculo.limpiar();
+                calculo.Limpiar();
                 Console.WriteLine("Desea realizar otra operacion?\n1.Si\n2.No");
                 linea = Console.ReadLine();
                 if (int.TryParse(linea, out seguirOperando))

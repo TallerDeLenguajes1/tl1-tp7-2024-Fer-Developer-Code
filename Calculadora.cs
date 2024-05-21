@@ -24,7 +24,7 @@ namespace espacioCalculdora
         {
             resultado = dato / termino;
         }
-        public void limpiar()
+        public void Limpiar()
         {
             resultado = 0;
         }
